@@ -1,0 +1,50 @@
+package com.mycompany.aula9.excr2;
+import java.util.Scanner;
+/**
+ *
+ * @author ferna
+ */
+
+/*
+Este programa introduz contadores e estruturas dentro do while
+Neste caso, o programa pede que se digite 10 numeros,
+Sendo feita uma verificação se são pares ou ímpares.
+Ao final é exibido quantos números pares foram digitados
+e qual é a média entre os ímpares.
+*/
+
+public class Principal2 {
+    public static void main (String[] args){
+        Scanner leia = new Scanner (System.in);
+        int cont = 1;
+        // count de numeros
+        int pares = 0;
+        int impares = 0;
+        int soma_impares = 0;
+        // count de pares,impares e a soma dos impares
+        int valor;
+        // valor que será digitado
+        int media = 0;
+        // calculo da media
+        
+        while (cont <= 10){
+            System.out.println ("Digite o número:");
+            valor = leia.nextInt();
+                if (valor%2==0){
+                // valores pares
+                pares++;
+                }
+                
+                else{
+                // valores impares
+                impares++;
+                soma_impares = soma_impares + valor;
+                }    
+                
+            cont++;
+        }
+        media = soma_impares / impares;
+        System.out.println ("Você digitou " + pares + " números pares");
+        System.out.println ("A média dos Ímpares é: " + media);    
+    }
+}
