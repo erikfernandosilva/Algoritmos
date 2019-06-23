@@ -1,0 +1,42 @@
+package com.mycompany.mavenproject12;
+import java.util.Scanner;
+/**
+ *
+ * @author ferna
+ */
+
+/*
+Este programa pede que 10 pessoas digitem
+idade, identificador único, e uma nota de 0 a 10.
+No final, é exibido quantas pessoas deram nota 10
+e qual a media de idade de todas as pessoas que responderam.
+*/
+
+public class Main {
+    public static void main(String[] args) {
+        int ciclo,idade,smidade,idunico,nota,nota10;
+        double media;
+        nota10 = 0;
+        smidade = 0;
+        ciclo = 1;
+        Scanner leia = new Scanner (System.in);
+        while (ciclo <= 10){
+            System.out.println("Digite a sua idade:");
+            idade = leia.nextInt();
+            smidade = smidade + idade;
+            System.out.println("Digite o seu identificador único:");
+            idunico = leia.nextInt();
+            System.out.println("Digite a sua nota:");
+            nota = leia.nextInt();
+                if (nota == 10){
+                    nota10++;
+                }
+            ciclo++;
+            System.out.println ("Obrigado!");
+            System.out.println();
+        }
+        media = smidade / 10;
+        System.out.println (nota10 + " pessoas deram nota 10.");
+        System.out.println ("A média de idade é " + media + " anos.");
+    }
+}
