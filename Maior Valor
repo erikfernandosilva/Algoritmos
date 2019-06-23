@@ -1,0 +1,30 @@
+package com.mycompany.mavenproject10;
+import java.util.Scanner;
+/**
+ *
+ * @author ferna
+ */
+
+/*
+Neste programa informa-se quantos números serão digitados,
+e após digitados, informa qual o maior número digitado.
+*/
+
+public class Main {
+    public static void main(String[] args) {
+        int n,valor;
+        int cont = 1;
+        int maior = 0;
+        Scanner leia = new Scanner (System.in);
+        System.out.println("Digite a quantidade de valores:");
+        n = leia.nextInt();
+        while (cont <= n){
+            System.out.println ("Digite o valor:");
+            valor = leia.nextInt();
+                if (maior < valor)
+                    maior = valor;
+            cont++;
+        }
+        System.out.println("O maior valor é:" + maior);
+    }
+}
