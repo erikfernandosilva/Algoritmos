@@ -1,0 +1,30 @@
+package com.mycompany.mavenproject11;
+import java.util.Scanner;
+/**
+ *
+ * @author ferna
+ */
+
+/*
+Este programa informa quantos números entre 100 e 200 foram digitados.
+Valores maiores ou menores são descartados.
+O programa para quando for digitado o numero zero.
+*/
+
+public class Main {
+    public static void main(String[] args) {
+        int num,cont;
+        cont = 0;
+        Scanner leia = new Scanner (System.in);
+        System.out.println("Digite o Número:");
+        num = leia.nextInt();
+        while (num > 1){
+            System.out.println("Digite o Número:");
+            num = leia.nextInt();
+                if ((num > 99)&&(num < 201)){
+                cont++;
+                }
+            } 
+        System.out.println("Numeros digitados:" + cont);
+    }
+}
