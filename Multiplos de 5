@@ -1,0 +1,23 @@
+package com.mycompany.mavenproject7;
+
+/**
+ *
+ * @author ferna
+ */
+
+/*
+Este programa mostra os números de 0 a 500
+que são múltiplos de 5.
+*/
+
+public class Main {
+    public static void main(String[] args) {
+        int cont = 0;
+        while (cont <= 500){
+            if (cont % 5 == 0){
+                System.out.println (cont);
+                cont = cont + 5;
+            }
+        }
+    }
+}
