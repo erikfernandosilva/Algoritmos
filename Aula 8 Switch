@@ -1,0 +1,39 @@
+package com.mycompany.aula8;
+import java.util.Scanner;
+
+/**
+ *
+ * @author ferna
+ */
+
+/*
+Aqui temos um exemplo de uso do switch.
+Este código recebe um time informado e diz que qual estado é,
+neste caso, existe apenas dois clubes, Juventude e Paysandu.
+*/
+
+public class Principal {
+    public static void main (String[] args){
+        String time;
+        // cadeia de caracteres
+        Scanner leia = new Scanner (System.in);
+        System.out.println("Escreva o time:");
+        time = leia.next();
+        
+        switch (time){
+        // implementação do switch
+        // necessário pensar em maiúsculas e acentos
+            case "Juventude":
+            case "juventude":
+                System.out.println("De Caxias do Sul.");
+                break; 
+            // se verdadeiro, imprime saída e para de ler outros cases.
+            case "Paysandu":
+            case "Paysandú":
+                System.out.println("De Belém.");
+                break; 
+        }
+        
+        System.out.println(time + " é nota " + 10);
+    }
+}
