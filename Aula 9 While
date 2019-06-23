@@ -1,0 +1,25 @@
+package com.mycompany.aula9;
+import java.util.Scanner;
+/**
+ *
+ * @author ferna
+ */
+
+/*
+Exemplo de while,
+neste caso, enquanto o número for maior que zero,
+ele será aceito pelo sistema.
+*/
+
+public class Principal {
+    public static void main (String[] args){
+        int numero;
+        Scanner leia = new Scanner (System.in);
+        System.out.println("Escreva o Número:");
+        numero = leia.nextInt();
+        
+        while (numero > 0){
+            numero = leia.nextInt();
+        }   
+    }
+}
