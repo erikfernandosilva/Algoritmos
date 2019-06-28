@@ -1,0 +1,12 @@
+/*
+Este programa faz incremento de 1 em 1
+de 1 até 100, usando o comando FOR.
+*/
+
+public class Main {
+    public static void main(String[] args){
+        for (int x = 1; x <= 100; x++){
+            System.out.println(x);
+        }
+    }
+}
