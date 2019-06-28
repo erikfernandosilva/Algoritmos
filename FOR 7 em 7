@@ -1,0 +1,12 @@
+/*
+Este programa faz incremento de 7 em 7
+de 7 até 77, usando o comando FOR.
+*/
+
+public class Main {
+    public static void main(String[] args){
+        for (int x = 7; x <= 77; x = x + 7){
+            System.out.println(x);
+        }
+    }
+}
