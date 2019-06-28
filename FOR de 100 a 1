@@ -1,0 +1,12 @@
+/*
+Este programa faz o decremento de 100 até 1,
+de 1 em 1, com o comando FOR.
+*/
+
+public class Main {
+    public static void main(String[] args){
+        for (int x = 100; x >= 1; x--){
+            System.out.println(x);
+        }
+    }
+}
