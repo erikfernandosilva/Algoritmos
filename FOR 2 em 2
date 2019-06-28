@@ -1,0 +1,12 @@
+/*
+Este programa faz decremento de 2 em 2
+de 20 até 2, usando o comando FOR.
+*/
+
+public class Main {
+    public static void main(String[] args){
+        for (int x = 20; x >= 2; x = x - 2){
+            System.out.println(x);
+        }
+    }
+}
