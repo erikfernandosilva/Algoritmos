@@ -1,0 +1,12 @@
+/*
+Este programa faz incremento de 3 em 3
+de 2 até 20 usando o comando FOR.
+*/
+
+public class Main {
+    public static void main(String[] args){
+        for (int x = 2; x <= 20; x = x + 3){
+            System.out.println(x);
+        }
+    }
+}
