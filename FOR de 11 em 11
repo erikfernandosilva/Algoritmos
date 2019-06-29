@@ -1,0 +1,12 @@
+/*
+Este programa faz o decremento de 99 até 0,
+de 11 em 11, com o comando FOR.
+*/
+
+public class Main {
+    public static void main(String[] args){
+        for (int x = 99; x >= 0; x = x - 11){
+            System.out.println(x);
+        }
+    }
+}
