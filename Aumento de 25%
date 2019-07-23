@@ -1,0 +1,38 @@
+package com.mycompany.mavenproject2;
+
+/**
+ *
+ * @author ferna
+ */
+
+/*
+Este programa tem como objetivo realizar o calculo do aumento de 25%
+em relação ao salário. E após, exibe o  novo salário, 
+que é o salário antigo, somado ao aumento.
+*/
+
+import java.util.Scanner;
+//declaração do scanner
+
+public class Principal {
+    public static void main (String[] args){
+        int salario,aumento,nvsalario;
+        //variaveis declaradas
+            Scanner leia = new Scanner (System.in);
+            //summonado o scanner com o nome "leia"
+                System.out.println ("Digite o salário:");
+                salario=leia.nextInt();
+                //salario lido
+                
+                // setor de calculos
+                aumento=salario*25/100;
+                //calculo da porcentagem de aumento, nesse caso, 25 porcento
+                
+                nvsalario=salario+aumento;
+                //aplicação do aumento
+                
+                System.out.print("O novo salário é:");
+                System.out.print(nvsalario);
+                //exibição do novo salario, que sai junto pois não é println
+    }
+}
