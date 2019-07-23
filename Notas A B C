@@ -1,0 +1,36 @@
+package com.mycompany.mavenproject3;
+
+/**
+ *
+ * @author ferna
+ */
+
+/*
+Este programa solicita ao usuário que digite uma nota,
+e após, é exibido uma letra referente ao valor:
+Abaixo de 80 é C, de 80 até 89 é B, de 90 para cima é A.
+*/
+
+import java.util.Scanner;
+
+public class Central {
+    public static void main (String[] args){
+        int N;
+        Scanner leia = new Scanner (System.in);
+        
+        System.out.println ("Digite uma nota");
+        N = leia.nextInt();
+        
+        if (N>=90){
+            System.out.println("A");
+        }
+        else{
+            if (N>=80){
+                System.out.println("B");
+            }
+            else{
+                System.out.println("C");
+            }
+        }
+    }
+}
